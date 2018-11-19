@@ -1,57 +1,30 @@
-var img;
-var s = 1.2; //scale
-w = 480;
-h = 360;
-
-function preload() {
-  img = loadImage('assets/earthmoon.jpg');
-  myFont = loadFont('assets/Roboto-Light.ttf');
-}
+var i = 1;
 
 function setup() {
-  createCanvas(w * s, h * s);
-  background(0, 25, 80);
+  createCanvas(800, 400);
+  fill(0, 0, 255);
+  rect(0, 0, width, height);
+
 }
 
 function draw() {
-  tint(0, 153, 224, 255);
-  brightness(0);
-  scale(0.55)
-  image(img, 0, 0);
-  rect(0,0,400,h);
+  //translate(0, height);
+  stroke(240);
 
+  x1 = -100;
+  x3 = 900;
+  x2 = random(0, width);
+  y = random(100,height);
+  s=(1*height-y)*10/y;
 
-  textFont(myFont);
-  noStroke();
-  fill(255);
-  textSize(60);
-  text('Where is Here?', 40, 80);
-  textSize(30);
-  text("Imagine if the explorers in George Mieles", 40, 120);
-  text("Imagine if the explorers in George Mieles", 40, 160);
-  text("Imagine if the explorers in George Mieles", 40, 200);
-  text("Imagine if the explorers in George Mieles", 40, 240);
-  text("Imagine if the explorers in George Mieles", 40, 280);
-  text("Imagine if the explorers in George Mieles", 40, 320);
-  text("Imagine if the explorers in George Mieles", 40, 360);
+  if (x1 < x2 && x2 < x3 && (x3 - x1)>100 && i < 40) {
+    strokeWeight(s);
+    fill(12, 77, 105);
+    triangle(x1, height, x2, y, x3, height);
+    i++;
+    print(x3 - x1);
 
-  text("Imagine if the explorers in George Mieles", 40, 400);
-  text("Imagine if the explorers in George Mieles", 40, 440);
-  text("Imagine if the explorers in George Mieles", 40, 480);
-  text("Imagine if the explorers in George Mieles", 40, 520);
-  text("Imagine if the explorers in George Mieles", 40, 560);
-  text("Imagine if the explorers in George Mieles", 40, 600);
-  text("Imagine if the explorers in George Mieles", 40, 640);
+  }
+//save('myCanvas.jpg')
 
-  text("Imagine if the explorers in George Mieles", 40, 680);
-  text("Imagine if the explorers in George Mieles", 40, 720);
-  text("Imagine if the explorers in George Mieles", 40, 760);
-    text("Gary Stilwell", 840, 760);
-
-
-
-
-
-  //save('tintmoon.png');
-  noLoop();
 }
