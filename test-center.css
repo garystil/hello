@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+main {
+  background: white;
+  height: 100vh;
+  margin: auto;
+  width: 2520px;
+  position: relative;
+  resize: vertical;
+  overflow: auto;
+}
+
+
+.divTable{
+display: table;
+table-layout: fixed;
+	position: absolute;
+  top: 50%;
+	bottom: 50%;
+	margin: auto;
+width: 2520px; 
+height: 550px;
+column-width: 630px;
+}
+
+.divTableRow {
+display: table-row;
+	column-count: 3;
+column-width: 630px;
+text-align: bottom;
+}
+
+.divTableCell{
+display: table-cell;
+column-width: 630px;
+border: 1px solid #999999;
+padding-right: 40px;
+padding-left: 40px;
+vertical-align: bottom;
+
+}
+
+
+
+
