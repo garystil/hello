@@ -48,6 +48,27 @@ vertical-align: bottom;
 height:16px;
 }
 
+.divCell03{
+display: table-cell;
+width: 394.17px;
+border: 0px solid #999999;
+padding-right: 40px;
+padding-left: 40px;
+padding-bottom: 13px;
+vertical-align: bottom;
+height: 550px;
+}
+
+.divCell04{
+display: table-cell;
+width: 394.17px;
+border: 0px solid #999999;
+padding-right: 40px;
+padding-left: 40px;
+vertical-align: bottom;
+height:16px;
+}
+
 h1 {
     font-family: 'Roboto:ital', sans-serif;
     font-weight: 260;
