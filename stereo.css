@@ -4,7 +4,7 @@ main {
   background: white;
   height: 100vh;
   margin: auto;
-  width: 5688px;
+  width: 5447px;
   position: fixed;
   resize: vertical;
   overflow: auto;
@@ -17,14 +17,14 @@ position: absolute;
 top: 50%;
 bottom: 50%;
 margin: auto;
-width: 5688px; 
+width: 5447px; 
 height: 566px;
 vertical-align: bottom;
 }
 
 .divRow{
 display: table-row;
-width: 5688px;
+width: 5447px;
 }
 
 .divCell01{
