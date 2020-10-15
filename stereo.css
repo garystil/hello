@@ -17,14 +17,14 @@ position: absolute;
 top: 50%;
 bottom: 50%;
 margin: auto;
-width: 11890px; 
+width: 7338px; 
 height: 566px;
 vertical-align: bottom;
 }
 
 .divRow{
 display: table-row;
-width: 11890px;
+width: 7338px;
 }
 
 .divCell01{
