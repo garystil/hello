@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+main {
+  background: white;
+  height: 100vh;
+  margin: auto;
+  width: 11890px;
+  position: fixed;
+  resize: vertical;
+  overflow: auto;
+}
+
+.divTable{
+display: table;
+table-layout: fixed;
+position: absolute;
+top: 50%;
+bottom: 50%;
+margin: auto;
+width: 11890px; 
+height: 566px;
+vertical-align: bottom;
+}
+
+.divRow{
+display: table-row;
+width: 11890px;
+}
+
+.divCell01{
+display: table-cell;
+width: 550px;
+border: 0px solid #999999;
+padding-right: 40px;
+padding-left: 40px;
+padding-bottom: 13px;
+vertical-align: bottom;
+height: 550px;
+}
+
+.divCell02{
+display: table-cell;
+width: 550px;
+border: 0px solid #999999;
+padding-right: 40px;
+padding-left: 40px;
+vertical-align: bottom;
+height:16px;
+}
+
+h1 {
+    font-family: 'Roboto:ital', sans-serif;
+    font-weight: 260;
+    color: rgba(100,100,100, 1.0);
+    text-align: right;
+    line-height: 0.55;
+    font-size: 30px;
+    webkit-font-smoothing: antialiased;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: rgba(90,90,90, 1.0);
+    text-align: right;
+    line-height: 4;
+    font-size: 22px;
+    webkit-font-smoothing: antialiased;
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+ color: rgba(70,70,70, 1.0);
+  text-align: right;
+	vertical-align: bottom;
+	line-height: 0;
+    font-size: 16px;
+    webkit-font-smoothing: antialiased;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: rgba(20,20,20, 1.0);
+    line-height: 1.4;
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 15px;
+    webkit-font-smoothing: antialiased;
+}
