@@ -4,7 +4,7 @@ main {
   background: white;
   height: 100vh;
   margin: auto;
-  width: 11890px;
+  width: 7968px;
   position: fixed;
   resize: vertical;
   overflow: auto;
@@ -17,14 +17,14 @@ position: absolute;
 top: 50%;
 bottom: 50%;
 margin: auto;
-width: 11890px; 
+width: 7968px; 
 height: 566px;
 vertical-align: bottom;
 }
 
 .divRow{
 display: table-row;
-width: 11890px;
+width: 7968px;
 }
 
 .divCell01{
@@ -41,6 +41,37 @@ height: 550px;
 .divCell02{
 display: table-cell;
 width: 550px;
+border: 0px solid #999999;
+padding-right: 40px;
+padding-left: 40px;
+vertical-align: bottom;
+height:16px;
+}
+
+.divCell03{
+display: table-cell;
+width: 394.17px;
+border: 0px solid #999999;
+padding-right: 40px;
+padding-left: 40px;
+padding-bottom: 13px;
+vertical-align: bottom;
+height: 550px;
+}
+
+.divCell04{
+display: table-cell;
+width: 394.17px;
+border: 0px solid #999999;
+padding-right: 40px;
+padding-left: 40px;
+vertical-align: bottom;
+height:16px;
+}
+
+.divCell05{
+display: table-cell;
+width: 10px;
 border: 0px solid #999999;
 padding-right: 40px;
 padding-left: 40px;
@@ -86,6 +117,3 @@ p {
     font-size: 15px;
     webkit-font-smoothing: antialiased;
 }
-
-
-
