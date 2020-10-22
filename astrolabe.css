@@ -117,3 +117,7 @@ p {
     font-size: 15px;
     webkit-font-smoothing: antialiased;
 }
+
+img {
+    pointer-events: none;
+}
