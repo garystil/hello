@@ -25,46 +25,51 @@ vertical-align: bottom;
 .divRow{
 display: table-row;
 width: 16952px;
+vertical-align: bottom;
 }
 
 .divCell01{
 display: table-cell;
+height: 550px;
 width: 550px;
 border: 0px solid #999999;
 padding-right: 40px;
 padding-left: 40px;
 vertical-align: bottom;
-height: 550px;
+
 }
 
 .divCell02{
 display: table-cell;
+height:16px;
 width: 550px;
 border: 0px solid #999999;
 padding-right: 40px;
 padding-left: 40px;
 vertical-align: bottom;
-height:16px;
+
 }
 
 .divCell03{
 display: table-cell;
+height: 550px;
 width: 394.17px;
 border: 0px solid #999999;
 padding-right: 40px;
 padding-left: 40px;
 vertical-align: bottom;
-height: 550px;
+
 }
 
 .divCell04{
 display: table-cell;
+height:16px;
 width: 394.17px;
 border: 0px solid #999999;
 padding-right: 40px;
 padding-left: 40px;
 vertical-align: bottom;
-height:16px;
+
 }
 
 
