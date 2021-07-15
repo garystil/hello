@@ -74,6 +74,17 @@ vertical-align: bottom;
 
 }
 
+.divCell5{
+display: table-cell;
+height:1080px;
+width: 6000px;
+border: 0px solid #999999;
+padding-right: 40px;
+padding-left: 40px;
+vertical-align: bottom;
+
+}
+
 
 h1 {
     font-family: 'Roboto:ital', sans-serif;
