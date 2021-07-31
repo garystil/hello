@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 main {
-  background: white;
+  background: red;
   height: 100vh;
   margin: auto;
   width: 18842px;
@@ -37,7 +37,7 @@ padding-right: 40px;
 padding-left: 40px;
 padding-bottom: 13px;
 vertical-align: bottom;
-	style.fill:red;
+fill:red;
 
 }
 
