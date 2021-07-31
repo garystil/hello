@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 main {
-  background: red;
   height: 100vh;
   margin: auto;
   width: 18842px;
@@ -20,7 +19,7 @@ margin: auto;
 width:18212px; 
 height: 566px;
 vertical-align: bottom;
-	  background: red;
+	  background: pink;
 }
 
 .divRow{
