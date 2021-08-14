@@ -19,6 +19,6 @@
  </head>
    <body>
    <iframe allow="fullscreen" style= "width: 1180px; height: 3000px; overflow: hidden;"  scrolling="no" frameborder="0" 
- src="https://github.com/garystil/CV/blob/master/Gary.Stilwell.CV.2021.pdf"></iframe>
+ src="Gary.Stilwell.CV.2021.pdf"></iframe>
    </body>
  </html>
