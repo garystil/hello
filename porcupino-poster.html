@@ -18,7 +18,20 @@
   </head>
     
   <body>
+<style>
+  input[type="password"] {
+    font-family: Arial, sans-serif; /* Change the font family */
+    font-size: 24px; /* Change the font size */
+  }
+</style>
 
+<form>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password">
+  <button type="submit">Submit</button>
+</form>
+    
+    
 <form onsubmit="checkPassword(event)">
   <label for="password">Password:</label>
   <input type="password" id="password" name="password">
