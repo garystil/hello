@@ -14,55 +14,68 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Style-Type" content="text/css">
     
-  <title>"porcupino-poster"</title>
-  </head>
-    
-  <body>
-    
-<style>
-  
-  /* Customize the font and font size of the form */
-  form {
-    font-family: Arial, sans-serif;
-        font-color: #FFA500;
-    font-size: 16px;
-  }
-  
-  /* Customize the font and font size of the password input */
-  input[type="password"] {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-  }
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			color: #333;
+		}
 
-</style>
-    
+		form {
+			margin-top: 50px;
+			padding: 20px;
+			background-color: #f1f1f1;
+			border-radius: 5px;
+		}
 
-<form onsubmit="checkPassword(event)">
-  <label for="password">Password:</label>
-  <input type="password" id="password" name="password">
-  <button type="submit">Submit</button3>
-</form>
+		label {
+			display: block;
+			margin-bottom: 10px;
+			color: #666;
+		}
 
+		input[type="password"] {
+			padding: 10px;
+			border: none;
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0 0 3px rgba(0,0,0,.2);
+			color: #666;
+			font-size: 16px;
+		}
+
+		input[type="submit"] {
+			padding: 10px;
+			border: none;
+			background-color: #333;
+			color: #fff;
+			font-size: 16px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		iframe {
+			margin-top: 50px;
+			border: none;
+			width: 100%;
+			height: 400px;
+			background-color: #f1f1f1;
+			color: #333;
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+		}
+	</style>
+</head>
+<body>
+	<form action="http://example.com" method="post">
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password"><br><br>
+		<input type="submit" value="Submit">
+	</form>
      <iframe allow="fullscreen" style= "width: 1366px; height: 820px; overflow: hidden;"  scrolling="no" frameborder="0" 
  src="porcupino-poster.pdf"></iframe>
-
-<script>
-  function checkPassword(event) {
-    event.preventDefault(); // prevent form from submitting
-
-    const password = document.getElementById('password').value;
-
-    if (password === 'correctpassword') {
-      document.getElementById('myFrame').src = 'https://www.example.com'; // set iframe src to another site
-    } else {
-      alert('Incorrect password'); // display error message
-    }
-  }
-</script>
-
-    
+</body>
+</html>
 
 
 
-  </body>
-  </html>
