@@ -1,3 +1,3 @@
 <?php
-$PASSWORD = "mysecretpassword";
+$PASSWORD = "owl";
 ?>
