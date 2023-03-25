@@ -15,69 +15,72 @@
     
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Style-Type" content="text/css">
-    
-    <style>
-      /* Style for the password form */
-      #password-form {
-        display: inline-block;
-      }
 
-      /* Style for the password label */
-      label {
-        display: inline-block;
-        float: left;
-        font-family: "Courier New", monospace;
-        font-size: 20px;
-        padding: 10px;
-        border: none;
-        background-color: #555;
-        color: #fff;
-        border-radius: 5px;
-        cursor: pointer;
- 
-      }
 
-      /* Style for the password input */
-      #password {
-     display: inline-block;
-        float: left;
-        font-family: "Courier New", monospace;
-        font-size: 20px;
-        padding: 10px;
-       border: none;
-        background-color: #f1f1f1;
-	margin-left: 10px;
-	         border-radius: 5px;
-
-      }
-
-      /* Style for the submit button */
-      #submit {
-       display: inline-block;
-        float: left;
-        font-family: "Courier New", monospace;
-        font-size: 20px;
-        padding: 10px;
-        border: none;
-        background-color: #555;
-        color: #fff;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-left: 10px;
-      }
-    </style>
-  </head>
-	    
-  <body>
-    <form id="password-form" action="https://garystil.github.io/hello/" method="post">
-      <label for="password">password</label>
-      <input type="password" id="password" name="password">
-      <input type="submit" id="submit" value="submit">
-    </form>
-	  
-require_once("config.php");
-	  
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Password Protected Page</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+			color: #333;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+		.form-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background-color: #f1f1f1;
+			padding: 20px;
+			border-radius: 5px;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		input[type=password] {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			padding: 10px;
+			border-radius: 5px;
+			margin-bottom: 10px;
+		}
+		input[type=submit] {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="form-container">
+			<form action="https://garystil.github.io/hello/" method="POST">
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password">
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+		  
 <iframe allow="fullscreen" style= "width: 1366px; height: 820px; overflow: hidden;"  scrolling="no" frameborder="0" 
  src="porcupino-poster.pdf"></iframe>
-  </body>
+</body>
 </html>
