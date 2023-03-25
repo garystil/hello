@@ -10,54 +10,60 @@
 
   gtag('config', 'G-9Q442V0MMG');
   </script>
+	  <!--<iframe allow="fullscreen" style= "width: 1366px; height: 820px; overflow: hidden;"  scrolling="no" frameborder="0" 
+ src="porcupino-poster.pdf"></iframe> -->
     
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Style-Type" content="text/css">
     
 	
 </head>
-<body>
-<style>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Password Input Form</title>
+    <style>
+      /* Style for the password form */
+      #password-form {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+      }
 
-		label {
-			display: block;
-			color: #666;
-		}
+      /* Style for the password input */
+      #password {
+        font-family: "Times New Roman", serif;
+        font-size: 18px;
+        padding: 10px;
+        border: none;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        box-shadow: 0 0 3px rgba(0,0,0,.2);
+        color: #666;
+      }
 
-		input[type="password"] {
-			border: none;
-			background-color: #fff;
-			border-radius: 5px;
-			box-shadow: 0 0 3px rgba(0,0,0,.2);
-			color: #666;
-			font-size: 16px;
-			display: inline-block;
-			vertical-align: middle;
-		}
-
-		input[type="submit"] {
-			border: none;
-			background-color: #333;
-			color: #fff;
-			font-size: 16px;
-			border-radius: 5px;
-			cursor: pointer;
-			display: inline-block;
-			vertical-align: middle;
-		}
-	</style>
-	
-	<form action="http://example.com" method="post">
-		<label for="password">Password:</label>
-		<input type="password" id="password" name="password"><br><br>
-		<input type="submit" value="Submit">
-	</form>
-	
-     <iframe allow="fullscreen" style= "width: 1366px; height: 820px; overflow: hidden;"  scrolling="no" frameborder="0" 
+      /* Style for the submit button */
+      #submit {
+        font-family: "Courier New", monospace;
+        font-size: 20px;
+        padding: 10px;
+        border: none;
+        background-color: #333;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="password-form" action="http://example.com" method="post">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+      <input type="submit" id="submit" value="Submit">
+    </form>
+<iframe allow="fullscreen" style= "width: 1366px; height: 820px; overflow: hidden;"  scrolling="no" frameborder="0" 
  src="porcupino-poster.pdf"></iframe>
-
-	  </body>
+  </body>
 </html>
-
-
-
