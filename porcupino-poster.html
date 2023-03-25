@@ -75,6 +75,14 @@
       <input type="submit" id="submit" value="submit">
     </form>
 	  
+	   <?php
+  require_once("config.php");
+
+  if (isset($_POST["password"]) && $_POST["password"] === $PASSWORD) {
+    echo "Password is correct!";
+  }
+  ?>
+	  
 <iframe allow="fullscreen" style= "width: 1366px; height: 820px; overflow: hidden;"  scrolling="no" frameborder="0" 
  src="porcupino-poster.pdf"></iframe>
   </body>
