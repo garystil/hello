@@ -18,14 +18,15 @@
   </head>
     
   <body>
-  <iframe allow="fullscreen" style= "width: 1366px; height: 820px; overflow: hidden;"  scrolling="no" frameborder="0" 
-  src="porcupino-poster.pdf"></iframe>
     
-<form onsubmit="checkPassword(event)">
+  <form onsubmit="checkPassword(event)">
   <label for="password">Password:</label>
   <input type="password" id="password" name="password">
   <button type="submit">Submit</button>
-</form>
+  </form>
+
+  <iframe allow="fullscreen" style= "width: 1366px; height: 820px; overflow: hidden;"  scrolling="no" frameborder="0" 
+  src="porcupino-poster.pdf"></iframe>
 
 <script>
   function checkPassword(event) {
@@ -34,11 +35,12 @@
     const password = document.getElementById('password').value;
 
     if (password === 'correctpassword') {
-      window.location.href = 'https://www.example.com'; // redirect to another site
+      document.getElementById('myFrame').src = 'https://www.example.com'; // set iframe src to another site
     } else {
       alert('Incorrect password'); // display error message
     }
   }
 </script>
+
   </body>
   </html>
