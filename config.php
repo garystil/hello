@@ -1,3 +1,0 @@
-<?php
-$PASSWORD = "owl";
-?>
