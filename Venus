@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+  <html> 
+    
+  <head>    
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GW0RTEMWGP"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GW0RTEMWGP');
+  </script>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  </head>
+    
+  <title> "venus" </title>
+    
+  <body>
+  <iframe allow="fullscreen" style= "width: 1180px; height: 792px; overflow: hidden;"  scrolling="no" frameborder="0" 
+  src="Gary.Stilwell.CV.2023.pdf"></iframe>
+  <iframe src="https://player.vimeo.com/video/817793583#t=0s" width="1900" height="000" frameborder="0" allowfullscreen></iframe>
+
+  </body>
+    
+  </html>
