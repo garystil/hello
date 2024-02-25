@@ -26,7 +26,8 @@ meta[name="viewport"] {
     -ms-overflow-style: none; /* For IE and Edge */
     overflow: -moz-scrollbars-none; /* For Firefox */
     overflow: auto; /* Default overflow property */
-     border: none;
+    border: none;
+    outline: none;
 }
 
 .container iframe {
@@ -44,6 +45,7 @@ iframe {
     /* max-width: 1180px; /* Set maximum width to accommodate the document width */
     height: 100%; /* Adjust height as needed */
     border: none; /* Remove iframe border */
+    outline: none;
 }
 
 /* Media Queries */
@@ -62,7 +64,6 @@ iframe {
     /* Styles for small screens (e.g., smartphones, small tablets) */
     iframe {
         width: 90%; /* Adjust width as needed */
-         border: none;
     }
 }
 
@@ -70,7 +71,6 @@ iframe {
     /* Styles for medium screens (e.g., tablets, laptops) */
     iframe {
         width: 80%; /* Adjust width as needed */
-         border: none;
     }
 }
 
@@ -78,7 +78,6 @@ iframe {
     /* Styles for large screens (e.g., desktops) */
     iframe {
         width: 80%; /* Adjust width as needed */
-         border: none;
     }
 }
 
