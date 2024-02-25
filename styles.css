@@ -22,7 +22,7 @@ meta[name="viewport"] {
     justify-content: center;
     align-items: center; /* Change to center */
     background-color: white;
-    overflow: hidden; /* Change to hidden */
+    /*overflow: hidden; /* Change to hidden */
     
     /* Hide scrollbar for Webkit-based browsers (Chrome, Safari) */
     scrollbar-width: none; /* For Firefox */
@@ -31,10 +31,6 @@ meta[name="viewport"] {
     overflow: auto; /* Default overflow property */
     border: none;
     outline: none;
-}
-
-.container iframe {
-    border: none;
 }
 
 /* Hide scrollbar for Webkit-based browsers (Chrome, Safari) */
