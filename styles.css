@@ -20,8 +20,10 @@ meta[name="viewport"] {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center; /* Change to center */
     background-color: white;
+    overflow: hidden; /* Change to hidden */
+    
     /* Hide scrollbar for Webkit-based browsers (Chrome, Safari) */
     scrollbar-width: none; /* For Firefox */
     -ms-overflow-style: none; /* For IE and Edge */
@@ -42,14 +44,9 @@ meta[name="viewport"] {
 
 /* Iframe Styles */
 iframe {
-    width: 100%; /* Adjust width as needed */
-    /* max-width: 1180px; /* Set maximum width to accommodate the document width */
+    max-width: 100%; /* Change width to max-width */
     height: 100%; /* Adjust height as needed */
     border: none; /* Remove iframe border */
-    outline: none;
-    background-color: white;
-    box-shadow: none; !important; /* Remove any box shadow */
-    -webkit-box-shadow: none; !important; /* For Safari */
 }
 
 /* Media Queries */
