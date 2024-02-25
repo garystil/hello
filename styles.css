@@ -28,6 +28,10 @@ meta[name="viewport"] {
     overflow: auto; /* Default overflow property */
 }
 
+.container iframe {
+    border: none;
+}
+
 /* Hide scrollbar for Webkit-based browsers (Chrome, Safari) */
 .container::-webkit-scrollbar {
     display: none;
