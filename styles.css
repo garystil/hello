@@ -20,7 +20,7 @@ meta[name="viewport"] {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background-color: transparent;
+    background-color: white;
     /* Hide scrollbar for Webkit-based browsers (Chrome, Safari) */
     scrollbar-width: none; /* For Firefox */
     -ms-overflow-style: none; /* For IE and Edge */
@@ -46,8 +46,9 @@ iframe {
     height: 100%; /* Adjust height as needed */
     border: none; /* Remove iframe border */
     outline: none;
-    box-shadow: none !important; /* Remove any box shadow */
-    -webkit-box-shadow: none !important; /* For Safari */
+    background-color: white;
+    box-shadow: none; !important; /* Remove any box shadow */
+    -webkit-box-shadow: none; !important; /* For Safari */
 }
 
 /* Media Queries */
