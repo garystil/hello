@@ -8,6 +8,7 @@
 /* Container Styles */
 .container {
     width: 100%;
+    max-width: 595px;
     height: 100vh;
     display: flex;
     justify-content: center;
