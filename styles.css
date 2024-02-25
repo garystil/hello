@@ -44,7 +44,7 @@ iframe {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     /* Styles for medium screens (e.g., tablets, laptops) */
     iframe {
-        width: 75%;
+        width: 15%;
     }
 }
 
