@@ -48,20 +48,20 @@ iframe {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     /* Styles for medium screens (e.g., tablets, laptops) */
     iframe {
-        width: 60%;
+        width: 90%;
     }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
     /* Styles for large screens (e.g., desktops) */
     iframe {
-        width: 90%;
+        width: 80%;
     }
 }
 
 @media screen and (min-width: 1441px) {
     /* Styles for extra large screens */
     iframe {
-        width: 70%;
+        width: 80%;
     }
 }
