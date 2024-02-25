@@ -30,34 +30,34 @@ iframe {
         padding: 95px;
     }
     iframe {
-        width: 90%;
+        width: 85%;
     }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     /* Styles for small screens (e.g., smartphones, small tablets) */
     iframe {
-        width: 90%;
+        width: 85%;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     /* Styles for medium screens (e.g., tablets, laptops) */
     iframe {
-        width: 90%;
+        width: 75%;
     }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
     /* Styles for large screens (e.g., desktops) */
     iframe {
-        width: 80%;
+        width: 65%;
     }
 }
 
 @media screen and (min-width: 1441px) {
     /* Styles for extra large screens */
     iframe {
-        width: 80%;
+        width: 65%;
     }
 }
