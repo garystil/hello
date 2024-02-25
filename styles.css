@@ -6,13 +6,8 @@
     border: 0;
 }
 
-/* Viewport Meta Tag */
-/* Ensure proper viewport settings to control the layout on mobile devices */
-/* Adjust as needed */
-meta[name="viewport"] {
-    width: device-width;
-    initial-scale: 1.0;
-}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 /* Container Styles */
 .container {
