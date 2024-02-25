@@ -46,6 +46,8 @@ iframe {
     height: 100%; /* Adjust height as needed */
     border: none; /* Remove iframe border */
     outline: none;
+    box-shadow: none !important; /* Remove any box shadow */
+    -webkit-box-shadow: none !important; /* For Safari */
 }
 
 /* Media Queries */
