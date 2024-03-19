@@ -8,7 +8,7 @@
 /* Container Styles */
 .container {
     width: 100%;
-    min-height: 100vh;
+    height: 100%; /* Update to 100% */
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Align to the top vertically */
