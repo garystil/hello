@@ -1,4 +1,3 @@
-
 /* Reset CSS */
 * {
     box-sizing: border-box;
@@ -12,89 +11,34 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Align to the top vertically */
     background-color: white; /* Set the background color as desired */
 }
 
 /* Iframe Styles */
 iframe {
-   width: 100%; /* Adjust width as needed */
+    width: 597px; /* Set PDF width */
+    height: auto; /* Auto height to maintain aspect ratio */
     max-width: 100%;
-    height: 100%;
     border: none;
+    margin-top: 0; /* Ensure no top margin */
 }
 
 /* Media Queries */
 /* Apply specific CSS rules based on screen width */
 
+@media (max-width: 597px) {
+    /* Small devices and above */
+    .container {
+        align-items: center; /* Center vertically */
+    }
+}
+
 @media (max-width: 575px) {
     /* Extra small devices */
     iframe {
-        width: 375px;
-        height: 1000px;
-        transform: scale(0.63);
-        transform-origin: top left;
+        width: 375px; /* Adjust width as needed */
     }
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
-    /* Small devices */
-    iframe {
-        width: 597px;
-        height: 1000px;
-        transform: scale(1.0);
-        transform-origin: top left;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    /* Medium devices */
-    iframe {
-        width: 768px;
-        height: 1000px;
-        transform: scale(0.78);
-        transform-origin: top left;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    /* Large devices */
-    iframe {
-        width: 992px;
-        height: 1000px;
-        transform: scale(0.60);
-        transform-origin: top left;
-    }
-}
-
-@media (min-width: 1200px) and (max-width: 1439px) {
-    /* Extra large devices */
-    iframe {
-        width: 1200px;
-        height: 1000px;
-        transform: scale(0.50);
-        transform-origin: top left;
-    }
-}
-
-@media (min-width: 1440px) and (max-width: 1919px) {
-    /* Larger than 1440px but less than 4K */
-    iframe {
-        width: 1440px;
-        height: 1000px;
-        transform: scale(0.45);
-        transform-origin: top left;
-    }
-}
-
-@media (min-width: 1920px) {
-    /* Extremely high-resolution devices (4K and above) */
-    iframe {
-        width: 100%;
-        height: 1000px;
-        transform: scale(0.35);
-        transform-origin: top left;
-    }
-}
-
-
+/* Add other media queries for larger screen sizes as necessary */
