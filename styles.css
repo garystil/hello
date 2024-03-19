@@ -30,7 +30,7 @@ iframe {
 @viewport {
     width: device-width;
     height: 1000px;
-    min-zoom: 0.47;
+    min-zoom: 0.63;
     max-zoom: 1;
     zoom: 0.47;
 }
@@ -38,7 +38,7 @@ iframe {
 @media (max-width: 575px) {
     @viewport {
         width: 375px;
-        min-zoom: 0.47;
+        min-zoom: 0.63;
         max-zoom: 1;
         zoom: 0.47;
     }
@@ -47,7 +47,7 @@ iframe {
 @media (min-width: 576px) and (max-width: 767px) {
     @viewport {
         width: 597px;
-        min-zoom: 0.72;
+        min-zoom: 0.78;
         max-zoom: 1;
         zoom: 0.72;
     }
