@@ -13,15 +13,18 @@
     justify-content: center;
     align-items: flex-start; /* Align to the top vertically */
     background-color: white; /* Set the background color as desired */
+    overflow: hidden; /* Ensure no scrolling */
 }
 
 /* Iframe Styles */
 iframe {
     width: 597px; /* Set PDF width */
-    height: auto; /* Auto height to maintain aspect ratio */
+    height: 1000px; /* Set PDF height */
     max-width: 100%;
+    max-height: 100%; /* Ensure PDF doesn't exceed viewport height */
     border: none;
-    margin-top: 0; /* Ensure no top margin */
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Ensure no extra spacing */
 }
 
 /* Media Queries */
@@ -38,7 +41,54 @@ iframe {
     /* Extra small devices */
     iframe {
         width: 375px; /* Adjust width as needed */
+        height: auto; /* Auto height to maintain aspect ratio */
     }
 }
 
-/* Add other media queries for larger screen sizes as necessary */
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Small devices */
+    iframe {
+        width: 597px; /* Adjust width as needed */
+        height: auto; /* Auto height to maintain aspect ratio */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Medium devices */
+    iframe {
+        width: 768px; /* Adjust width as needed */
+        height: auto; /* Auto height to maintain aspect ratio */
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Large devices */
+    iframe {
+        width: 992px; /* Adjust width as needed */
+        height: auto; /* Auto height to maintain aspect ratio */
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+    /* Extra large devices */
+    iframe {
+        width: 1200px; /* Adjust width as needed */
+        height: auto; /* Auto height to maintain aspect ratio */
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+    /* Larger than 1440px but less than 4K */
+    iframe {
+        width: 1440px; /* Adjust width as needed */
+        height: auto; /* Auto height to maintain aspect ratio */
+    }
+}
+
+@media (min-width: 1920px) {
+    /* Extremely high-resolution devices (4K and above) */
+    iframe {
+        width: 1920px; /* Adjust width as needed */
+        height: auto; /* Auto height to maintain aspect ratio */
+    }
+}
