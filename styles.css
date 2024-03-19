@@ -8,20 +8,20 @@
 /* Container Styles */
 .container {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Align to the top vertically */
     background-color: white; /* Set the background color as desired */
-    overflow: hidden; /* Ensure no scrolling */
+    overflow-y: auto; /* Allow vertical scrolling */
 }
 
 /* Iframe Styles */
 iframe {
-    width: 597px; /* Set PDF width */
-    height: 1000px; /* Set PDF height */
+    width: 100%;
+    height: 100%;
     max-width: 100%;
-    max-height: 100%; /* Ensure PDF doesn't exceed viewport height */
+    max-height: 100%;
     border: none;
     margin: 0 auto; /* Center horizontally */
     display: block; /* Ensure no extra spacing */
@@ -34,14 +34,15 @@ iframe {
     /* Small devices and above */
     .container {
         align-items: center; /* Center vertically */
+        height: auto; /* Allow container height to adjust */
     }
 }
 
 @media (max-width: 575px) {
     /* Extra small devices */
     iframe {
-        width: 375px; /* Adjust width as needed */
-        height: auto; /* Auto height to maintain aspect ratio */
+        width: 100%; /* Adjust width to fill container */
+        height: auto; /* Allow height to adjust based on content */
     }
 }
 
