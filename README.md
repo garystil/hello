@@ -1,1 +1,0 @@
-# garystil.github.io
