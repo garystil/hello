@@ -1,99 +1,104 @@
-
-/* Reset CSS */
+/* ================================
+   RESET CSS
+   ================================ */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Container Styles */
+/* ================================
+   CONTAINER STYLES
+   ================================ */
 .container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white; /* Set the background color as desired */
+  width: 100%;
+  min-height: 100vh; /* Use min-height so container can expand */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* align to top so PDF scrolls naturally */
+  background-color: white;
+  overflow: auto; /* allow scrolling if PDF taller than viewport */
 }
 
-/* Iframe Styles */
+/* ================================
+   IFRAME STYLES
+   ================================ */
 iframe {
-   width: 100%; /* Adjust width as needed */
-    max-width: 100%;
-    height: 100%;
-    border: none;
+  width: 100%;
+  min-height: 100vh; /* at least one viewport high */
+  height: auto; /* allow height to adjust naturally */
+  border: none;
+  overflow: auto; /* ensures multi-page PDFs are scrollable */
+  display: block;
 }
 
-/* Media Queries */
-/* Apply specific CSS rules based on screen width */
-
+/* ================================
+   RESPONSIVE VIEWPORT SETTINGS
+   ================================ */
 @viewport {
-    width: device-width;
-    height: 1000px;
+  width: device-width;
+  min-zoom: 0.63;
+  max-zoom: 1;
+  zoom: 0.47;
+}
+
+/* Extra responsive zoom adjustments */
+@media (max-width: 575px) {
+  @viewport {
+    width: 375px;
     min-zoom: 0.63;
     max-zoom: 1;
     zoom: 0.47;
-}
-
-@media (max-width: 575px) {
-    @viewport {
-        width: 375px;
-        min-zoom: 0.63;
-        max-zoom: 1;
-        zoom: 0.47;
-    }
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    @viewport {
-        width: 597px;
-        min-zoom: 0.78;
-        max-zoom: 1;
-        zoom: 0.72;
-    }
+  @viewport {
+    width: 597px;
+    min-zoom: 0.78;
+    max-zoom: 1;
+    zoom: 0.72;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    @viewport {
-        width: 768px;
-        min-zoom: 0.65;
-        max-zoom: 1;
-        zoom: 0.65;
-    }
+  @viewport {
+    width: 768px;
+    min-zoom: 0.65;
+    max-zoom: 1;
+    zoom: 0.65;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    @viewport {
-        width: 992px;
-        min-zoom: 0.52;
-        //max-zoom: 1;
-        zoom: 0.52;
-    }
+  @viewport {
+    width: 992px;
+    min-zoom: 0.52;
+    zoom: 0.52;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1439px) {
-    @viewport {
-        width: 1200px;
-        min-zoom: 0.44;
-        //max-zoom: 1;
-        zoom: 0.44;
-    }
+  @viewport {
+    width: 1200px;
+    min-zoom: 0.44;
+    zoom: 0.44;
+  }
 }
 
 @media (min-width: 1440px) and (max-width: 1919px) {
-    @viewport {
-        width: 1440px;
-        min-zoom: 0.37;
-        //max-zoom: 1;
-        zoom: 0.37;
-    }
+  @viewport {
+    width: 1440px;
+    min-zoom: 0.37;
+    zoom: 0.37;
+  }
 }
 
 @media (min-width: 1920px) {
-    @viewport {
-        width: 1920px;
-        min-zoom: 0.30;
-        max-zoom: 1;
-        zoom: 0.30;
-    }
+  @viewport {
+    width: 1920px;
+    min-zoom: 0.30;
+    max-zoom: 1;
+    zoom: 0.30;
+  }
 }
