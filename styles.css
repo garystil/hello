@@ -1,40 +1,56 @@
-/* ================================
-   RESET CSS
-   ================================ */
+/* =======================================
+   RESET & BASE
+   ======================================= */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* prevents double scrollbars */
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* ================================
-   CONTAINER STYLES
-   ================================ */
+/* =======================================
+   CONTAINER
+   ======================================= */
 .container {
   width: 100%;
-  min-height: 100vh; /* Use min-height so container can expand */
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* align to top so PDF scrolls naturally */
+  align-items: center;
   background-color: white;
-  overflow: auto; /* allow scrolling if PDF taller than viewport */
+  overflow: hidden; /* allow iframe to handle scrolling */
 }
 
-/* ================================
-   IFRAME STYLES
-   ================================ */
+/* =======================================
+   IFRAME
+   ======================================= */
 iframe {
   width: 100%;
-  min-height: 100vh; /* at least one viewport high */
-  height: auto; /* allow height to adjust naturally */
+  height: 100vh; /* fills the viewport */
   border: none;
-  overflow: auto; /* ensures multi-page PDFs are scrollable */
   display: block;
+  overflow: auto; /* internal scroll for multi-page PDFs */
+  transform: scale(1); /* ensures correct render size on load */
+  transform-origin: 0 0;
+  opacity: 0; /* prevents “tiny-then-full” flicker */
+  transition: opacity 0.4s ease-in; /* smooth appearance */
 }
 
-/* ================================
+/* Class added after load via JavaScript */
+iframe.loaded {
+  opacity: 1;
+}
+
+/* =======================================
    RESPONSIVE VIEWPORT SETTINGS
-   ================================ */
+   ======================================= */
 @viewport {
   width: device-width;
   min-zoom: 0.63;
